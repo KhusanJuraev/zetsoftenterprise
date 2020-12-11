@@ -6,7 +6,7 @@
 
         <div class="features">
 
-          <div class="feature d-flex justify-content-around align-items-center pb-5">
+          <div class="feature d-flex justify-content-around align-items-center pb-5 flex-wrap">
             <kinesis-element strength="10">
               <div class="feature-img">
                 <kinesis-element strength="5">
@@ -14,23 +14,19 @@
                 </kinesis-element>
               </div>
             </kinesis-element>
-            <div class="feature-content w-50">
               <p class="feature-description">
                 <span>ZETSOFT</span> — инновационная IT компания в Ташкенте, работающая по методологиям
                 Scrum/Kanban, предлагает своим клиентам широкий спектр услуг по комплексной
                 поддержке бизнеса клиентов на долгосрочной основе.
               </p>
-            </div>
           </div>
 
-          <div class="feature d-flex justify-content-around align-items-center pt-5">
-            <div class="feature-content w-50">
+          <div class="feature d-flex justify-content-around align-items-center pt-5 flex-wrap">
               <p class="feature-description">
                 <span>Мы</span> не просто делаем сайты и мобильные приложения, наша стратегия — быть лучшими в создании
                 медиапространств, где эти сайты и приложения будут работать, а мы сможем привлечь аудиторию,
                 обеспечить ее стабильный интерес и рост.
               </p>
-            </div>
             <kinesis-element strength="10">
               <div class="feature-img">
                 <kinesis-element strength="5">
@@ -87,6 +83,8 @@ export default {
   font-size: 24px;
   line-height: 150%;
   color: #1A2863;
+  max-width: 650px;
+  padding-top: 3rem;
 }
 .feature-description span {
   font-weight: 500;

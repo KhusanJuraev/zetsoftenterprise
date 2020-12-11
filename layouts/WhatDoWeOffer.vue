@@ -2,7 +2,7 @@
   <section>
     <div class="container">
       <Title title="ЧТО МЫ ПРЕДЛАГАЕМ?"/>
-      <div class="offer-cards d-flex flex-wrap justify-content-between">
+      <div class="offer-cards d-flex flex-wrap justify-content-around">
         <OfferCards
           v-for="offer of offers"
           v-bind:svg="offer.svg"

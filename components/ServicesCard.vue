@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 .card-services {
-  width: 360px;
+  max-width: 360px;
   height: 390px;
   background: #FFFFFF;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);

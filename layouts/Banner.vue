@@ -82,7 +82,8 @@ export default {
   position: absolute;
   bottom: 0;
   background-image: url("../assets/img/mask.png");
-  background-position: bottom;
+  background-size: cover;
+  background-position: top;
   width: 100%;
   height: 116px;
 }

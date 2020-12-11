@@ -2,7 +2,7 @@
   <section>
     <div class="container">
       <Title v-bind:title="title" v-bind:text="text"/>
-      <div class="d-flex justify-content-lg-between justify-content-sm-center flex-wrap align-items-center">
+      <div class="services-cards d-flex justify-content-around flex-wrap align-items-center">
         <ServicesCard
           v-for="service of services"
           v-bind:svg="service.svg"
@@ -17,6 +17,7 @@
 <script>
 import Title from "@/components/Title";
 import ServicesCard from "@/components/ServicesCard";
+
 export default {
   name: "WhatAreWeDoing",
   components: {ServicesCard, Title},
@@ -73,5 +74,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
