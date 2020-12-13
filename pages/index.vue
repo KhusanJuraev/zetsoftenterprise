@@ -7,6 +7,7 @@
     <WhatDoWeOffer />
     <Clients />
     <OurContacts />
+    <UpArrow />
   </div>
 </template>
 
@@ -18,9 +19,10 @@ import Video from "@/layouts/Video";
 import WhatDoWeOffer from "@/layouts/WhatDoWeOffer";
 import Clients from "@/layouts/Clients";
 import OurContacts from "@/layouts/OurContacts";
+import UpArrow from "@/components/upArrow";
 export default {
   name: 'Home',
-  components: {OurContacts, Clients, WhatDoWeOffer, Video, WhatAreWeDoing, WhoAreWe, Banner},
+  components: {UpArrow, OurContacts, Clients, WhatDoWeOffer, Video, WhatAreWeDoing, WhoAreWe, Banner},
 }
 </script>
 

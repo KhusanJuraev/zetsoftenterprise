@@ -1,4 +1,5 @@
 <template>
+  <header>
     <b-navbar class="bg-blue" toggleable="lg" type="dark">
       <Logo />
 
@@ -21,6 +22,7 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
+  </header>
 </template>
 
 <script>
@@ -68,6 +70,8 @@ export default {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+}
+header {
   z-index: 1000;
 }
 </style>
