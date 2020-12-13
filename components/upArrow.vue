@@ -26,7 +26,6 @@ export default {
   mounted: function () {
       window.addEventListener('scroll', () => {
         if (scrollY > 400) {
-          console.log(scrollY);
           document.querySelector('.up-arrow').classList.add('visible');
         } else {
           document.querySelector('.up-arrow').classList.remove('visible');

@@ -2,6 +2,7 @@
   <kinesis-container>
     <Navbar class="position-fixed w-100 top"/>
     <Nuxt />
+    <up-arrow/>
     <Footer />
   </kinesis-container>
 </template>
@@ -10,8 +11,10 @@
 import Navbar from "@/components/Navbar";
 import { KinesisContainer, KinesisElement} from 'vue-kinesis'
 import Footer from "@/components/Footer";
+import UpArrow from "@/components/upArrow";
 export default {
   components: {
+    UpArrow,
     Footer,
     Navbar,
     'kinesis-container': KinesisContainer,

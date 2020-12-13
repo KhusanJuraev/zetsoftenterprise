@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container">
-      <Title v-bind:title="title" v-bind:text="text"/>
+      <Title :title="title" :text="text"/>
       <div class="services-cards d-flex justify-content-around flex-wrap align-items-center">
         <ServicesCard
           v-for="service of services"

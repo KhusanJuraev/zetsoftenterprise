@@ -7,7 +7,6 @@
     <WhatDoWeOffer />
     <Clients />
     <OurContacts />
-    <UpArrow />
   </div>
 </template>
 
@@ -22,7 +21,7 @@ import OurContacts from "@/layouts/OurContacts";
 import UpArrow from "@/components/upArrow";
 export default {
   name: 'Home',
-  components: {UpArrow, OurContacts, Clients, WhatDoWeOffer, Video, WhatAreWeDoing, WhoAreWe, Banner},
+  components: {OurContacts, Clients, WhatDoWeOffer, Video, WhatAreWeDoing, WhoAreWe, Banner},
 }
 </script>
 

@@ -1,19 +1,90 @@
 <template>
-  <section>
-    <h2>About</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Accusamus accusantium ad aliquam, aperiam dicta error illum
-      labore laborum sunt ullam? Commodi error est natus neque placeat
-      porro quam ratione temporibus.</p>
+  <section class="overflow-hidden">
+    <kinesis-container>
+      <div class="container">
+        <page-title
+          title="КТО МЫ ТАКИЕ..."
+          img="pageImg1"
+        />
+        <p class="text-center about-info">
+          <b>ZETSOFT</b> — инновационная IT компания в Ташкенте, работающая по <br>
+          методологиям Scrum/Kanban, предлагает своим клиентам широкий спектр <br>
+          услуг по комплексной поддержке бизнеса клиентов на долгосрочной основе.
+        </p>
+        <div class="features">
+          <Feature
+            v-for="feature of features"
+            :title="feature.title"
+            :text="feature.text"
+            :svg="feature.svg"
+          />
+        </div>
+        <OrderProject />
+      </div>
+    </kinesis-container>
   </section>
 </template>
 
 <script>
+import PageTitle from "@/components/pageTitle";
+import { KinesisContainer, KinesisElement} from 'vue-kinesis'
+import Feature from "@/components/Feature";
+import OrderProject from "@/components/OrderProject";
 export default {
-name: "About"
+  name: "About",
+  components: {
+    OrderProject,
+    Feature,
+    PageTitle,
+    'kinesis-container': KinesisContainer,
+    'kinesis-element': KinesisElement
+  },
+  data() {
+    return {
+      features: [
+        {
+          title: "Индивидуальный подход",
+          text: "Каждый наш клиент должен чувствовать, что он или она является самым важным человеком в мире для нас. Каждый наш проект является уникальным маркетинговым инструментом с эксклюзивным дизайном. Наши проекты должны быть лучше, чем у других. Вместо реализации «как у конкурента» предпочитаем работать правильно, без повтора чужих ошибок.",
+          svg: "aboutSvg1"
+        },
+        {
+          title: "Делаем хорошо, как для себя\n",
+          text: "Мы подходим к работе с любовью и ответственностью, что гарантирует отличный результат в успехе продаж и расширении базы клиентов компании. Во всех проектах мы внедряем индивидуально разработанные инновационные системы и технологии, быстрые при загрузке и простые в управлении.",
+          svg: "aboutSvg2"
+        },
+        {
+          title: "Качественный результат",
+          text: "В наших проектах мы гарантируем чистый код, только персональные разработки для выполнения конкретных задач, что учитывается в дизайне, при верстке, программировании и при продвижении. Выполняем проекты в срок, в нужном месте и с высоким качеством. Мы придерживаемся точности в отношениях, потому что понимаем бизнес наших Партнеров.",
+          svg: "aboutSvg3"
+        },
+        {
+          title: "Сопровождение",
+          text: "После окончания работ, мы поддерживаем каждый наш продукт, и помогаем в дальнейшем его развитии. Секрет нашего успеха заключается в том, что мы заинтересованы в успехе каждого проекта. Именно это создаёт нашу репутацию, которая обеспечивает дальнейшее развитие. Таким образом, ваша репутация является нашей честью!",
+          svg: "aboutSvg4"
+        },
+        {
+          title: "Качественный результат",
+          text: "В наших проектах мы гарантируем чистый код, только персональные разработки для выполнения конкретных задач, что учитывается в дизайне, при верстке, программировании и при продвижении. Выполняем проекты в срок, в нужном месте и с высоким качеством. Мы придерживаемся точности в отношениях, потому что понимаем бизнес наших Партнеров.",
+          svg: "aboutSvg3"
+        },
+        {
+          title: "Сопровождение",
+          text: "После окончания работ, мы поддерживаем каждый наш продукт, и помогаем в дальнейшем его развитии. Секрет нашего успеха заключается в том, что мы заинтересованы в успехе каждого проекта. Именно это создаёт нашу репутацию, которая обеспечивает дальнейшее развитие. Таким образом, ваша репутация является нашей честью!",
+          svg: "aboutSvg4"
+        },
+      ]
+    }
+  }
 }
 </script>
 
 <style scoped>
-
+.about-info {
+  font-size: 24px;
+  color: #1A2863;
+  margin: 160px;
+}
+.feature:nth-child(odd) {
+  flex-direction: row-reverse;
+}
 </style>
