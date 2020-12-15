@@ -6,10 +6,10 @@
           title="КТО МЫ ТАКИЕ..."
           img="pageImg1"
         />
-        <p class="text-center about-info">
-          <b>ZETSOFT</b> — инновационная IT компания в Ташкенте, работающая по <br>
-          методологиям Scrum/Kanban, предлагает своим клиентам широкий спектр <br>
-          услуг по комплексной поддержке бизнеса клиентов на долгосрочной основе.
+        <p class="text-center about-info m-0">
+          <b>ZETSOFT</b> — <i> инновационная IT компания в Ташкенте, работающая по
+          методологиям Scrum/Kanban, предлагает своим клиентам широкий спектр
+          услуг по комплексной поддержке бизнеса клиентов на долгосрочной основе. </i>
         </p>
         <div class="features">
           <Feature
@@ -86,5 +86,16 @@ export default {
 }
 .feature:nth-child(odd) {
   flex-direction: row-reverse;
+}
+@media (max-width: 990px) {
+  .feature:last-child {
+    flex-direction: row-reverse;
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .about-info {
+    font-size: 18px;
+  }
 }
 </style>

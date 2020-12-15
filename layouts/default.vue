@@ -1,9 +1,12 @@
 <template>
   <kinesis-container>
-    <Navbar class="position-fixed w-100 top"/>
+    <Navbar
+      v-if="$route.fullPath !== '/contacts'"
+      class="position-fixed w-100 top"/>
     <Nuxt />
-    <up-arrow/>
-    <Footer />
+    <up-arrow v-if="$route.fullPath !== '/contacts'"/>
+    <Footer v-if="$route.fullPath !== '/contacts'"/>
+
   </kinesis-container>
 </template>
 
@@ -18,7 +21,11 @@ export default {
     Footer,
     Navbar,
     'kinesis-container': KinesisContainer,
-    'kinesis-element': KinesisElement}
+    'kinesis-element': KinesisElement
+  },
+  mounted: function () {
+    console.log(this.$route.fullPath);
+  }
 }
 </script>
 
@@ -43,6 +50,11 @@ body {
 section {
   margin-top: 100px;
 }
+@media (max-width: 993px) {
+  section {
+    margin-top: 50px;
+  }
+}
 .top {
   top: 0;
 }
@@ -52,6 +64,11 @@ section {
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1540px;
+  }
+}
+@media (max-width: 768px) {
+  input, textarea {
+    min-width: 100%!important;
   }
 }
 </style>

@@ -38,4 +38,9 @@ export default {
     width: 100%;
   }
 }
+@media (max-width: 993px) {
+  .title {
+    margin-bottom: 50px;
+  }
+}
 </style>

@@ -37,6 +37,7 @@ export default {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 44px;
   padding: 30px 0;
+  margin-bottom: 1rem;
 }
 .offer-card-block {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);

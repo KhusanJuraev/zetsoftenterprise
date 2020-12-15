@@ -26,4 +26,44 @@ export default {
 </script>
 
 <style>
+@media (max-width: 993px) {
+  .banner-info {
+    text-align: center;
+  }
+  .banner-img {
+    display: none;
+  }
+  .feature {
+    padding-bottom: 0!important;
+    text-align: center;
+  }
+  .feature-description {
+    font-size: 20px!important;
+  }
+  .feature:last-child {
+    flex-direction: column-reverse;
+  }
+  .contact-input {
+    width: 100%;
+  }
+  .contact-input button {
+    margin-bottom: 1rem;
+  }
+  .contact-address {
+    text-align: center;
+
+  }
+  .social-icons {
+
+  }
+}
+@media (max-width: 498px) {
+  .feature-img,
+  .feature-img img{
+    width: 100% !important;
+  }
+  .banner-title {
+    font-size: 36px;
+  }
+}
 </style>

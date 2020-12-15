@@ -1,6 +1,6 @@
 <template>
   <header>
-    <b-navbar class="bg-blue" toggleable="lg" type="dark">
+    <b-navbar class="navbar-bg bg-blue" toggleable="lg" type="dark">
       <Logo />
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>

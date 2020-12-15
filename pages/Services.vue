@@ -20,10 +20,14 @@
         <div class="services-cards d-flex justify-content-around flex-wrap align-items-center">
           <ServicesCard
             v-for="service of services"
-            v-bind:svg="service.svg"
-            v-bind:title="service.title"
-            v-bind:description="service.description"
+            :svg="service.svg"
+            :title="service.title"
+            :description="service.description"
           />
+          <p class="text-center text-dark"><i>
+            *Окончательная стоимость услуг и срок разработки может варьироваться исходя из ваших потребностей, <br>
+            пожеланий и сложности технического задания.
+          </i></p>
         </div>
         <OrderProject />
       </div>
@@ -108,5 +112,19 @@ export default {
   font-size: 20px;
   margin-top: 20px;
   color: #1A2863;
+}
+@media (max-width: 998px) {
+  .services-info h3 {
+    font-size: 24px;
+  }
+  .services-info p {
+    font-size: 18px;
+  }
+  .services-cards {
+    margin: 3rem 0;
+  }
+  .order-project {
+    padding-top: 0;
+  }
 }
 </style>

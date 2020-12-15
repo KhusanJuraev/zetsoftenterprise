@@ -56,4 +56,16 @@ export default {
   transform: translate(4%, 8%);
   background: #0055f345;
 }
+@media (max-width: 768px) {
+  .page-title {
+    margin: 25px 0 50px;
+  }
+  .page-title h2 {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  .page-title span {
+    font-size: 56px;
+  }
+}
 </style>
